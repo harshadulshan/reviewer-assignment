@@ -1,0 +1,13 @@
+reviewer_id,title,abstract,year,authors
+A01,Early warning of at-risk students from learning management system logs,Weekly engagement features predict course failure in blended learning; we evaluate logistic regression and random forests.,2023,Amaya Perera; Nimal Fernando
+A01,Learning analytics dashboards for academic advisors,A field study of advisors using dashboards of student activity and grades.,2021,Amaya Perera
+A02,Cross-lingual transfer for low-resource language classification,Multilingual transformers transfer to Sinhala and Tamil with little labelled data.,2024,Bhanuka Silva; Ruwan Dias
+A02,Sentiment analysis of student course reviews,Aspect-based sentiment analysis of open-ended feedback text.,2022,Bhanuka Silva
+A03,Simulated annealing for university course timetabling,Neighbourhood moves and cooling schedules for constrained timetabling problems.,2020,Chathura Ranasinghe
+A03,Integer programming for staff rostering,Column generation for nurse rostering with fairness constraints.,2023,Chathura Ranasinghe; Sanduni Herath
+A04,Hierarchical forecast reconciliation for retail demand,Optimal reconciliation of store and product level forecasts.,2022,Dinithi Abeysekara
+A04,Bayesian structural time series for hospital admissions,Forecasting admissions with seasonality and holiday effects.,2024,Dinithi Abeysekara
+A05,Unsupervised anomaly detection in energy consumption,Isolation forests and autoencoders on smart meter profiles.,2023,Eranga Kumara
+A05,Explaining gradient boosting with SHAP for credit decisions,Local explanations for loan approval models.,2021,Eranga Kumara; Malith Gunasekara
+A06,Small-sample estimation in item response models,Bias of discrimination parameters in short tests and how to correct it.,2022,Fathima Nazeer
+A06,Hierarchical Bayesian models for educational experiments,Partial pooling of treatment effects across classes.,2023,Fathima Nazeer

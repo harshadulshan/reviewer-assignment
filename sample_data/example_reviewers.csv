@@ -1,0 +1,7 @@
+reviewer_id,name,email,institution,max_load,min_load,experienced,expertise
+A01,Amaya Perera,amaya.p@example-uni.edu,Example University,6,1,yes,"learning analytics, educational data mining"
+A02,Bhanuka Silva,bhanuka@other-university.edu,Other University,6,1,yes,natural language processing
+A03,Chathura Ranasinghe,chathura.r@demo-institute.org,Demo Institute,5,0,no,"combinatorial optimisation, operations research"
+A04,Dinithi Abeysekara,dinithi@third-college.ac,Third College,6,1,yes,"time series forecasting, statistics"
+A05,Eranga Kumara,eranga.k@sample-college.ac,Sample College,5,0,no,"machine learning, anomaly detection, explainability"
+A06,Fathima Nazeer,fathima@other-university.edu,Other University,6,0,no,"psychometrics, assessment, Bayesian statistics"

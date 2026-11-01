@@ -1,0 +1,644 @@
+{
+ "expertise": {
+  "grid": {
+   "T=0.0, half-life=None": 0.25466542099731404,
+   "T=0.0, half-life=5.0": 0.24921172486278173,
+   "T=5.0, half-life=None": 0.2547822024991241,
+   "T=5.0, half-life=5.0": 0.24798551909377556,
+   "T=10.0, half-life=None": 0.2550507999532874,
+   "T=10.0, half-life=5.0": 0.24943360971622094,
+   "T=20.0, half-life=None": 0.25644049982482775,
+   "T=20.0, half-life=5.0": 0.25808711900035036,
+   "T=inf, half-life=None": 0.2812916034100199,
+   "T=inf, half-life=5.0": 0.2812916034100199
+  },
+  "cv_loss": 0.24864883802405696,
+  "cv_loss_sd": 0.0008627584672777368,
+  "cv_chosen": {
+   "(5.0, 5.0)": 46,
+   "(0.0, 5.0)": 2,
+   "(10.0, 5.0)": 2
+  },
+  "best_on_all": "(5.0, 5.0)",
+  "default": "(5.0, 5.0)",
+  "default_loss": 0.24798551909377556,
+  "default_ci": [
+   0.20112610001875544,
+   0.2937500543230171
+  ],
+  "n_researchers": 58,
+  "n_ratings": 477,
+  "published": {
+   "tpms": {
+    "label": "TPMS (Charlin & Zemel 2013), used by many conferences",
+    "kind": "classic",
+    "loss": 0.2810580404063996,
+    "ci": [
+     0.23071859019522803,
+     0.333815337968126
+    ]
+   },
+   "elmo": {
+    "label": "ELMo (OpenReview)",
+    "kind": "neural",
+    "loss": 0.34469228074273034,
+    "ci": [
+     0.2890779996330993,
+     0.40246638551638203
+    ]
+   },
+   "acl": {
+    "label": "ACL reviewer matcher (Neubig et al.)",
+    "kind": "neural",
+    "loss": 0.2957725096344739,
+    "ci": [
+     0.2445111782527284,
+     0.34639402321774587
+    ]
+   },
+   "specter": {
+    "label": "SPECTER (Cohan et al. 2020)",
+    "kind": "neural",
+    "loss": 0.2688894079177858,
+    "ci": [
+     0.21243379609680846,
+     0.3359640173994561
+    ]
+   },
+   "specter_mfr": {
+    "label": "SPECTER + MFR (OpenReview)",
+    "kind": "neural",
+    "loss": 0.23838607964498423,
+    "ci": [
+     0.1846063390240067,
+     0.3025202714332468
+    ]
+   },
+   "spector2": {
+    "label": "SPECTER2 (Singh et al. 2023)",
+    "kind": "neural",
+    "loss": 0.24529954455214292,
+    "ci": [
+     0.1954440432288598,
+     0.30776642763987083
+    ]
+   },
+   "spector2_max": {
+    "label": "SPECTER2, closest paper",
+    "kind": "neural",
+    "loss": 0.22147611818287985,
+    "ci": [
+     0.18463163506685826,
+     0.26228528603340034
+    ]
+   },
+   "o1mini": {
+    "label": "OpenAI o1-mini (LLM)",
+    "kind": "llm",
+    "loss": 0.24500759079761764,
+    "ci": [
+     0.20413703490835508,
+     0.28505217680288847
+    ]
+   },
+   "claudesonnet35": {
+    "label": "Claude 3.5 Sonnet (LLM)",
+    "kind": "llm",
+    "loss": 0.3105979212892678,
+    "ci": [
+     0.274407714976369,
+     0.35197093724834877
+    ]
+   },
+   "gemini2flash": {
+    "label": "Gemini 2.0 Flash (LLM)",
+    "kind": "llm",
+    "loss": 0.37935303047997204,
+    "ci": [
+     0.34437732630669826,
+     0.41402876965254803
+    ]
+   }
+  }
+ },
+ "assignment": {
+  "iclr2018": {
+   "name": "ICLR 2018 (911 papers, 2,435 reviewers)",
+   "papers": 911,
+   "reviewers": 2435,
+   "demand": 3,
+   "max_load": 6,
+   "capacity": 5.345773874862788,
+   "methods": {
+    "greedy": {
+     "total": 321.1448860590838,
+     "worst_paper": 0.11431554234896274,
+     "paper_p10": 0.21130061529559335,
+     "share_top": 0.995609220636663,
+     "mean_rank": 2.3476033662641784,
+     "load_max": 6,
+     "seconds": 1.2021820545196533,
+     "status": "heuristic",
+     "valid": true,
+     "papers_short": 0
+    },
+    "max_total": {
+     "total": 322.40095627153613,
+     "worst_paper": 0.11431554234896274,
+     "paper_p10": 0.21413065314009494,
+     "share_top": 1.0,
+     "mean_rank": 2.2795462861324554,
+     "load_max": 6,
+     "seconds": 0.25643062591552734,
+     "status": "optimal",
+     "valid": true,
+     "papers_short": 0,
+     "lp_bound": 322.4009562715362,
+     "candidates": 34441
+    },
+    "fair": {
+     "total": 322.3950220301032,
+     "worst_paper": 0.11525720682044532,
+     "paper_p10": 0.21413065314009494,
+     "share_top": 1.0,
+     "mean_rank": 2.2839370654957922,
+     "load_max": 6,
+     "seconds": 3.822450637817383,
+     "status": "optimal",
+     "valid": true,
+     "papers_short": 0,
+     "floor": 0.11525720682044532,
+     "floor_bound": 0.11525720682044532
+    },
+    "randomized": {
+     "total": 293.16364445851747,
+     "worst_paper": 0.10209845186612798,
+     "paper_p10": 0.19655146349329283,
+     "share_top": 1.0,
+     "mean_rank": 3.730332967435053,
+     "load_max": 6,
+     "seconds": 0.5428571701049805,
+     "status": "sampled",
+     "valid": true,
+     "papers_short": 0,
+     "expected_total": 292.9921030591461,
+     "max_probability": 0.5
+    }
+   },
+   "dense_lp_seconds": 16.892731428146362,
+   "dense_lp_total": 322.4009562715362
+  },
+  "preflib1": {
+   "name": "AI conference 1 bids (PrefLib)",
+   "papers": 54,
+   "reviewers": 31,
+   "demand": 3,
+   "max_load": 6,
+   "capacity": 1.1481481481481481,
+   "methods": {
+    "greedy": {
+     "total": 121.0,
+     "worst_paper": 0.75,
+     "paper_p10": 1.0,
+     "share_top": 0.9444444444444444,
+     "mean_rank": 5.339506172839506,
+     "load_max": 6,
+     "seconds": 0.0012941360473632812,
+     "status": "heuristic",
+     "valid": true,
+     "papers_short": 0
+    },
+    "max_total": {
+     "total": 124.25,
+     "worst_paper": 0.75,
+     "paper_p10": 1.3250000000000002,
+     "share_top": 0.9814814814814815,
+     "mean_rank": 4.290123456790123,
+     "load_max": 6,
+     "seconds": 0.01477193832397461,
+     "status": "optimal",
+     "valid": true,
+     "papers_short": 0,
+     "lp_bound": 124.25,
+     "candidates": 1096
+    },
+    "fair": {
+     "total": 124.25,
+     "worst_paper": 0.75,
+     "paper_p10": 1.3250000000000002,
+     "share_top": 1.0,
+     "mean_rank": 5.333333333333333,
+     "load_max": 6,
+     "seconds": 0.0558469295501709,
+     "status": "optimal",
+     "valid": true,
+     "papers_short": 0,
+     "floor": 0.75,
+     "floor_bound": 0.75
+    },
+    "randomized": {
+     "total": 103.25,
+     "worst_paper": 0.75,
+     "paper_p10": 0.75,
+     "share_top": 0.9074074074074074,
+     "mean_rank": 6.993827160493828,
+     "load_max": 6,
+     "seconds": 0.02525949478149414,
+     "status": "sampled",
+     "valid": true,
+     "papers_short": 0,
+     "expected_total": 103.125,
+     "max_probability": 0.5
+    }
+   }
+  },
+  "preflib2": {
+   "name": "AI conference 2 bids (PrefLib)",
+   "papers": 52,
+   "reviewers": 24,
+   "demand": 3,
+   "max_load": 7,
+   "capacity": 1.0769230769230769,
+   "methods": {
+    "greedy": {
+     "total": 136.5,
+     "worst_paper": 1.0,
+     "paper_p10": 1.75,
+     "share_top": 1.0,
+     "mean_rank": 3.4038461538461537,
+     "load_max": 7,
+     "seconds": 0.0004611015319824219,
+     "status": "heuristic",
+     "valid": true,
+     "papers_short": 0
+    },
+    "max_total": {
+     "total": 141.5,
+     "worst_paper": 1.0,
+     "paper_p10": 2.0,
+     "share_top": 0.9807692307692307,
+     "mean_rank": 3.0576923076923075,
+     "load_max": 7,
+     "seconds": 0.009487628936767578,
+     "status": "optimal",
+     "valid": true,
+     "papers_short": 0,
+     "lp_bound": 141.5,
+     "candidates": 1029
+    },
+    "fair": {
+     "total": 141.5,
+     "worst_paper": 1.0,
+     "paper_p10": 2.0,
+     "share_top": 1.0,
+     "mean_rank": 3.141025641025641,
+     "load_max": 7,
+     "seconds": 0.045087575912475586,
+     "status": "optimal",
+     "valid": true,
+     "papers_short": 0,
+     "floor": 1.0,
+     "floor_bound": 1.0
+    },
+    "randomized": {
+     "total": 117.25,
+     "worst_paper": 0.75,
+     "paper_p10": 1.0250000000000001,
+     "share_top": 0.9615384615384616,
+     "mean_rank": 5.358974358974359,
+     "load_max": 7,
+     "seconds": 0.024530410766601562,
+     "status": "sampled",
+     "valid": true,
+     "papers_short": 0,
+     "expected_total": 119.0,
+     "max_probability": 0.5
+    }
+   }
+  },
+  "preflib3": {
+   "name": "AI conference 3 bids (PrefLib)",
+   "papers": 176,
+   "reviewers": 146,
+   "demand": 3,
+   "max_load": 6,
+   "capacity": 1.6590909090909092,
+   "methods": {
+    "greedy": {
+     "total": 463.0,
+     "worst_paper": 0.75,
+     "paper_p10": 1.5,
+     "share_top": 0.8977272727272727,
+     "mean_rank": 6.441287878787879,
+     "load_max": 6,
+     "seconds": 0.012267589569091797,
+     "status": "heuristic",
+     "valid": true,
+     "papers_short": 0
+    },
+    "max_total": {
+     "total": 479.5,
+     "worst_paper": 1.5,
+     "paper_p10": 2.0,
+     "share_top": 0.8920454545454546,
+     "mean_rank": 6.2518939393939394,
+     "load_max": 6,
+     "seconds": 0.0400543212890625,
+     "status": "optimal",
+     "valid": true,
+     "papers_short": 0,
+     "lp_bound": 479.5,
+     "candidates": 4017
+    },
+    "fair": {
+     "total": 479.5,
+     "worst_paper": 1.5,
+     "paper_p10": 2.0,
+     "share_top": 0.8977272727272727,
+     "mean_rank": 6.357954545454546,
+     "load_max": 6,
+     "seconds": 29.392234802246094,
+     "status": "optimal",
+     "valid": true,
+     "papers_short": 0,
+     "floor": 1.5,
+     "floor_bound": 1.500001
+    },
+    "randomized": {
+     "total": 418.25,
+     "worst_paper": 1.0,
+     "paper_p10": 1.5,
+     "share_top": 0.7897727272727273,
+     "mean_rank": 10.206439393939394,
+     "load_max": 6,
+     "seconds": 0.181809663772583,
+     "status": "sampled",
+     "valid": true,
+     "papers_short": 0,
+     "expected_total": 422.75,
+     "max_probability": 0.5
+    }
+   }
+  },
+  "iclr2018_scarce": {
+   "name": "ICLR 2018, scarce reviewers (1,000 reviewers, at most 3 each)",
+   "papers": 911,
+   "reviewers": 1000,
+   "demand": 3,
+   "max_load": 3,
+   "capacity": 1.0976948408342482,
+   "methods": {
+    "greedy": {
+     "total": 248.21167699264154,
+     "worst_paper": 0.056304896877817895,
+     "paper_p10": 0.12686499703170825,
+     "share_top": 0.7497255762897914,
+     "mean_rank": 24.953530918404685,
+     "load_max": 3,
+     "seconds": 0.40819859504699707,
+     "status": "heuristic",
+     "valid": true,
+     "papers_short": 0
+    },
+    "max_total": {
+     "total": 253.79608132696023,
+     "worst_paper": 0.07086124694050086,
+     "paper_p10": 0.14565653902915032,
+     "share_top": 0.849615806805708,
+     "mean_rank": 14.292718624222466,
+     "load_max": 3,
+     "seconds": 6.503002405166626,
+     "status": "optimal",
+     "valid": true,
+     "papers_short": 0,
+     "lp_bound": 253.79608132696032,
+     "candidates": 27099
+    },
+    "fair": {
+     "total": 253.5387213530387,
+     "worst_paper": 0.09850472230633292,
+     "paper_p10": 0.1450759540394431,
+     "share_top": 0.858397365532382,
+     "mean_rank": 14.109403585803147,
+     "load_max": 3,
+     "seconds": 10.617732048034668,
+     "status": "optimal",
+     "valid": true,
+     "papers_short": 0,
+     "floor": 0.09850472230633292,
+     "floor_bound": 0.09850472230633292
+    },
+    "randomized": {
+     "total": 230.57511056446572,
+     "worst_paper": 0.0645199563083585,
+     "paper_p10": 0.1396476138821266,
+     "share_top": 0.8013172338090011,
+     "mean_rank": 18.66008049762166,
+     "load_max": 3,
+     "seconds": 10.07783579826355,
+     "status": "sampled",
+     "valid": true,
+     "papers_short": 0,
+     "expected_total": 231.61401126322932,
+     "max_probability": 0.5
+    }
+   }
+  },
+  "preflib3_scarce": {
+   "name": "AI conference 3 bids, at most 4 per reviewer",
+   "papers": 176,
+   "reviewers": 146,
+   "demand": 3,
+   "max_load": 4,
+   "capacity": 1.106060606060606,
+   "methods": {
+    "greedy": {
+     "total": 430.25,
+     "worst_paper": 0.75,
+     "paper_p10": 1.125,
+     "share_top": 0.8352272727272727,
+     "mean_rank": 18.615530303030305,
+     "load_max": 4,
+     "seconds": 0.013880252838134766,
+     "status": "heuristic",
+     "valid": true,
+     "papers_short": 0
+    },
+    "max_total": {
+     "total": 468.5,
+     "worst_paper": 1.0,
+     "paper_p10": 2.0,
+     "share_top": 0.8920454545454546,
+     "mean_rank": 7.8352272727272725,
+     "load_max": 4,
+     "seconds": 0.09891510009765625,
+     "status": "optimal",
+     "valid": true,
+     "papers_short": 0,
+     "lp_bound": 468.5,
+     "candidates": 5197
+    },
+    "fair": {
+     "total": 468.5,
+     "worst_paper": 1.5,
+     "paper_p10": 1.75,
+     "share_top": 0.9261363636363636,
+     "mean_rank": 7.912878787878788,
+     "load_max": 4,
+     "seconds": 11.372839212417603,
+     "status": "optimal",
+     "valid": true,
+     "papers_short": 0,
+     "floor": 1.5,
+     "floor_bound": 1.5
+    },
+    "randomized": {
+     "total": 403.5,
+     "worst_paper": 0.75,
+     "paper_p10": 1.25,
+     "share_top": 0.8011363636363636,
+     "mean_rank": 21.696969696969695,
+     "load_max": 4,
+     "seconds": 0.31151700019836426,
+     "status": "sampled",
+     "valid": true,
+     "papers_short": 0,
+     "expected_total": 402.0,
+     "max_probability": 0.5
+    }
+   }
+  },
+  "demo": {
+   "name": "Demo workshop (real papers and researchers)",
+   "papers": 150,
+   "reviewers": 58,
+   "demand": 3,
+   "max_load": 9,
+   "capacity": 1.16,
+   "methods": {
+    "greedy": {
+     "total": 13.62821960999791,
+     "worst_paper": 0.037924703646896624,
+     "paper_p10": 0.06439974560411846,
+     "share_top": 0.9666666666666667,
+     "mean_rank": 3.7488888888888887,
+     "load_max": 9,
+     "seconds": 0.0033288002014160156,
+     "status": "heuristic",
+     "valid": true,
+     "papers_short": 0
+    },
+    "max_total": {
+     "total": 13.761279220014144,
+     "worst_paper": 0.04190330244129452,
+     "paper_p10": 0.0707236840248775,
+     "share_top": 0.9933333333333333,
+     "mean_rank": 3.1955555555555555,
+     "load_max": 9,
+     "seconds": 0.025456905364990234,
+     "status": "optimal",
+     "valid": true,
+     "papers_short": 0,
+     "lp_bound": 13.76127922001414,
+     "candidates": 3061
+    },
+    "fair": {
+     "total": 13.754848190882853,
+     "worst_paper": 0.042875710593810394,
+     "paper_p10": 0.0707236840248775,
+     "share_top": 0.9933333333333333,
+     "mean_rank": 3.2,
+     "load_max": 9,
+     "seconds": 0.15567541122436523,
+     "status": "optimal",
+     "valid": true,
+     "papers_short": 0,
+     "floor": 0.042875710593810394,
+     "floor_bound": 0.042875710593810394
+    },
+    "randomized": {
+     "total": 12.70632291981509,
+     "worst_paper": 0.03497679752133895,
+     "paper_p10": 0.06418786076605905,
+     "share_top": 0.9866666666666667,
+     "mean_rank": 4.975555555555555,
+     "load_max": 9,
+     "seconds": 0.0903787612915039,
+     "status": "sampled",
+     "valid": true,
+     "papers_short": 0,
+     "expected_total": 12.616651840550139,
+     "max_probability": 0.5
+    }
+   },
+   "conflicts": 202,
+   "gold": {
+    "assigned_n": 54,
+    "assigned_mean": 4.046296296296297,
+    "other_n": 74,
+    "other_mean": 3.39527027027027,
+    "assigned_4plus": 0.6481481481481481,
+    "other_4plus": 0.4864864864864865
+   }
+  }
+ },
+ "randomized_curve": {
+  "best_total": 322.40095627153613,
+  "points": [
+   {
+    "q": 0.2,
+    "expected_total": 254.5795971449266,
+    "share_of_best": 0.7896366068173561
+   },
+   {
+    "q": 0.3,
+    "expected_total": 271.40167159843463,
+    "share_of_best": 0.8418141023435789
+   },
+   {
+    "q": 0.4,
+    "expected_total": 283.4247001660057,
+    "share_of_best": 0.879106263963115
+   },
+   {
+    "q": 0.5,
+    "expected_total": 292.9921030591461,
+    "share_of_best": 0.908781743229009
+   },
+   {
+    "q": 0.6,
+    "expected_total": 300.81524223065963,
+    "share_of_best": 0.9330469912666874
+   },
+   {
+    "q": 0.7,
+    "expected_total": 307.1425858896045,
+    "share_of_best": 0.9526726888208094
+   },
+   {
+    "q": 0.8,
+    "expected_total": 312.7258435382208,
+    "share_of_best": 0.9699904341314464
+   },
+   {
+    "q": 0.9,
+    "expected_total": 317.58396148253996,
+    "share_of_best": 0.9850589934822056
+   },
+   {
+    "q": 1.0,
+    "expected_total": 322.4009562715362,
+    "share_of_best": 1.0000000000000002
+   }
+  ]
+ },
+ "marginals": {
+  "samples": 2000,
+  "invalid": 0,
+  "max_abs_deviation": 0.029500000000000026,
+  "max_probability": 0.5,
+  "pairs": 1321
+ },
+ "seconds": 251.91536474227905,
+ "machine": "2 cores, Python 3.13.16"
+}

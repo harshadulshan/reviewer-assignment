@@ -1,0 +1,6 @@
+# downloaded datasets (fetched again on first use)
+data_cache/
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
